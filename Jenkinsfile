@@ -1,6 +1,8 @@
 pipeline {
     agent any
-    tools{ jdk 'Java 11’ }
+    tools{ 
+	    jdk 'Java 11' 
+	}
     environment { JAVA_HOME = '/usr/lib/jvm/java-11-openjdk-amd64/' }
     stages {
         stage ('Compile Stage') {
