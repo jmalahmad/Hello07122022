@@ -16,7 +16,7 @@ pipeline {
             steps {
                 withMaven(maven : 'Maven 3.8.6') {
                     bat 'mvn test'
-                } *
+                	}
 		}
 	}
         stage ('Install Stage') {
